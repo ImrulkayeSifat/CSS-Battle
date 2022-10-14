@@ -1,0 +1,99 @@
+
+<div a>
+  <span b></span>
+</div>
+<div c>
+  <span d></span>
+</div>
+<style>
+  body{
+    background:#293462;
+    margin:0;
+  }
+  [a] {
+    width: 100px;
+    height: 200px;
+    background: #FE5F55;
+    position:absolute;
+    top:50px;
+    left:100px;
+    border-radius:182px 0 0 90px;
+    overflow:hidden;
+  }
+  [c] {
+    width: 100px;
+    height: 200px;
+    background: #FE5F55;
+    position:absolute;
+    top:50px;
+    left:200px;
+    border-radius:0 182px 90px 0;
+    overflow:hidden;
+  }
+  [a]::before,[a]::after{
+    content:'';
+    background:#FFF1C1;
+  }
+  [c]::before,[c]::after{
+    content:'';
+    background:#FFF1C1;
+  }
+
+  [a]::before{
+    width:100px;
+    height:100px;
+    position:absolute;
+    border-radius:50%;
+    top:-50px;
+  }
+  [c]::before{
+    width:100px;
+    height:100px;
+    position:absolute;
+    border-radius:50%;
+    top:-50px;
+  }
+
+    [a]::after{
+      width:60px;
+      height:60px;
+      position:absolute;
+      border-radius:50%;
+      top:90px;
+      left:20px;
+    }
+  [c]::after{
+      width:60px;
+      height:60px;
+      position:absolute;
+      border-radius:50%;
+      top:90px;
+      left:20px;
+    }
+  [b]{
+    width:20px;
+    height:10px;
+    position:absolute;
+    background:#FFF1C1;
+    top:170px;
+    left:80px;
+    border-radius:20px 0 0 20px;
+  }
+  [d]{
+    width:20px;
+    height:10px;
+    position:absolute;
+    background:#FFF1C1;
+    top:170px;
+    left:0px;
+    border-radius:0 20px 20px 0;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
